@@ -1,0 +1,72 @@
+.resev
+{
+   background: var(--container-color);
+   padding: 2.5rem;
+
+}
+.resev__form
+{
+   grid-template-columns: repeat(3 ,1fr); 
+}
+.form__input-textarea,
+.resev__btn
+{
+grid-column: 1/-1;
+}
+.form__input
+{
+    width: 100%;
+    color: var(--title-color);
+    background: var(--bg-color);
+    border: 1px solid var(--first-color-light);
+    padding: 1rem 1.25rem;
+
+}
+.resev,
+.form__input
+{
+    border-radius: var(--radius);
+}
+.form__input-textarea .form__input
+{
+    height: 128px;
+    resize: none;
+}
+.form__input::placeholder
+{
+    color: var(--first-color-light);
+}
+.resev__btn
+{
+    justify-self: center;
+}
+.shape__two
+{
+    right: 1.25rem;
+    top: 4.5rem;
+}
+.shape__three
+{
+    left: 1.25rem;
+    bottom: 0.25rem;
+}
+.shape__two,
+.shape__three
+{
+    width: 180px;
+    position: absolute;
+}
+@media screen and (max-width: 1200px)
+{
+    .resev__form
+    {
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media screen and (max-width: 500px)
+{
+    .resev__form
+    {
+        grid-template-columns: repeat(1,1fr);
+    }
+}

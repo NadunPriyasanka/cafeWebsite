@@ -1,0 +1,171 @@
+/*=================================== 
+#GOOGLE FONTS 
+===================================*/
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Lobster&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+/*=================================== 
+#CSS VARIABLES
+===================================*/
+
+:root {
+    --header-height: 5rem;
+  
+    /*===============
+     * Colors
+    ===============*/
+  
+    --first-color:rgb(186, 147, 115) ;
+    --first-color-light: rgb(98, 91, 75);
+    --title-color: rgb(250, 249, 249);
+    --text-color: rgb(174, 173, 173);
+    --bg-color: rgb(22, 22, 22);
+    --container-color: rgb(14, 14, 14);
+    --hsla: rgb(4, 4, 4, 0.75);
+  
+    /*===============
+     * Typography
+    ===============*/
+  
+    --body-font: ;
+    --second-font: "Lobster Two", sans-serif;
+  
+    --biggest-font-size: 4.125rem;
+    --bigger-font-size: 3.125rem;
+    --big-font-size: 2.5rem;
+    --h1-font-size:1.875rem ;
+    --h2-font-size:1.75rem ;
+    --h3-font-size:1.5rem ;
+    --largest-font-size:1.375rem ;
+    --larger-font-size: 1.25rem;
+    --large-font-size: 1.125rem;
+    --normal-font-size:1rem ;
+  
+    --weight-400: 400;
+    --weight-500: 500;
+    --weight-600: 600;
+    --weight-700: 700;
+  
+    /*===============
+     * Border-radius
+    ===============*/
+  
+    --radius: 0.5rem;
+  
+    /*===============
+     * Transition
+    ===============*/
+  
+    --transition: ease-in-out;
+  }
+  
+  /*=================================== 
+  #RESET
+  ===================================*/
+  
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+input,
+textarea,
+body
+{
+    font-size: var(--normal-font-size);    
+}
+body
+{
+    color:var(--text-color) ;
+    background: var(--bg-color);
+}
+h1,h2,h3
+{
+    font-family: var(--second-font);
+    color:rgb(252, 248, 248);
+    font-weight: 400;
+}
+p
+{
+    line-height: 1.8;
+}
+a{
+    text-decoration: none;
+}
+input,
+textarea
+{
+    border: none;
+    outline: none;
+}
+img
+{
+    max-width: 100%;
+}
+.container
+{
+    max-width: 1200px;
+    margin-inline: auto;
+    padding-inline: 0.75rem;
+}
+.grid
+{
+    display: grid;
+    gap: 1rem;
+}
+.btn
+{
+    display: inline-block;
+    color: var(--title-color);
+    background-color: var(--first-color);
+    border: 2px solid var(--first-color);
+    padding: 1rem 1.5rem;
+    border-radius: 0.5rem;
+}
+.btn:hover
+{
+    background-color: transparent;
+    color: var(--first-color);
+
+}
+.section
+{
+    padding-block: 1.5rem;
+}
+.section__title
+{
+    font-size: var(--big-font-size);
+    margin-bottom: 1rem;
+    text-align: center;
+}
+.section_title::before
+{
+    content: attr(data-title);
+    display: block;
+    color: var(--first-color);
+    font-family: var(--second-font);
+    font-size: var(--h2-font-size);
+    letter-spacing: 2px;
+    margin-bottom: 0.5rem;
+}
+
+  /*=================================== 
+  #RESUABLE CSS CLASSES
+  ===================================*/
+  
+
+  @media screen and (max-width: 1200px){
+    .container
+    {
+      max-width: 960px;
+    }
+    .features__grid,
+    .footer__grid
+    {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .footer__grid
+    {
+      row-gap: 3rem;
+    }
+  }
