@@ -27,29 +27,29 @@ function App() {
         <BrowserRouter> 
 
         <Routes>
-        <Route path='/' element={<Home/>}/>       
+        <Route path="/cafeWebsite" element={<Home/>}/>       
         </Routes>
 
         <Routes>
-        <Route path='/Menu' element={<Menu/>}/>
+        <Route path='/cafeWebsite/Menu/' element={<Menu/>}/>
         </Routes>
         
         <Routes>
-        <Route path='/Gallery' element={<Gallery/>}/>
+        <Route path='/cafeWebsite/Gallery' element={<Gallery/>}/>
         </Routes>
 
         
 
         <Routes>
-        <Route path='/features' element={<Features/>}/>
+        <Route path='/cafeWebsite/features' element={<Features/>}/>
         </Routes>
 
         <Routes>
-        <Route path='/Book a Table' element={<Book a Table/>}/>
+        <Route path='/cafeWebsite/Book a Table' element={<Book a Table/>}/>
         </Routes>
 
         <Routes>
-        <Route path='/About' element={<About/>}/>
+        <Route path='/cafeWebsite/About' element={<About/>}/>
         </Routes>
 
         </BrowserRouter>
