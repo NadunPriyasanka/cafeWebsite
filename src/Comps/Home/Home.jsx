@@ -17,8 +17,8 @@ function Home() {
                </p>
 
                <div className="home__btns">
-                <a href="/menu" className="btn">Check menu</a>
-                <a href="/book a table" className="btn home_btn">Book a Table</a>
+                <a href="/cafeWebsite/menu" className="btn">Check menu</a>
+                <a href="/cafeWebsite/book a table" className="btn home_btn">Book a Table</a>
                </div>
             </div>
         </div>
