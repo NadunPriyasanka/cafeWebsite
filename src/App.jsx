@@ -20,7 +20,7 @@ function App() {
       <div>        
         <Nav/>
 
-        <BrowserRouter> 
+        <BrowserRouter > 
 
         <Routes>
         <Route path='/' element={<Home/>}/>       
