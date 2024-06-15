@@ -17,35 +17,39 @@ function App() {
 
   return (
     <>
+
+
+
+
       <div>        
         <Nav/>
 
         <BrowserRouter> 
 
         <Routes>
-        <Route path='/cafeWebsite/' element={<Home/>}/>       
+        <Route path='/' element={<Home/>}/>       
         </Routes>
 
         <Routes>
-        <Route path='/cafeWebsite/Menu' element={<Menu/>}/>
+        <Route path='/Menu' element={<Menu/>}/>
         </Routes>
         
         <Routes>
-        <Route path='/cafeWebsite/Gallery' element={<Gallery/>}/>
+        <Route path='/Gallery' element={<Gallery/>}/>
         </Routes>
 
         
 
         <Routes>
-        <Route path='/cafeWebsite/features' element={<Features/>}/>
+        <Route path='/features' element={<Features/>}/>
         </Routes>
 
         <Routes>
-        <Route path='/cafeWebsite/Book a Table' element={<Book a Table/>}/>
+        <Route path='/Book a Table' element={<Book a Table/>}/>
         </Routes>
 
         <Routes>
-        <Route path='/cafeWebsite/About' element={<About/>}/>
+        <Route path='/About' element={<About/>}/>
         </Routes>
 
         </BrowserRouter>
